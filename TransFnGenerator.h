@@ -1,16 +1,12 @@
 #include <common.h>
 
 class TransFnGenerator {
-    typedef TransFnIterator iterator;
-
 public:
     TransFnIterator& begin();
     TransFnIterator& end();
 };
 
 class TransFnIterator {
-    typedef TransFn value_type;
-
 private:
     // The transition function maps from ((Q \ F) x Gamma) to (Q x Gamma x {L, R, N}).
     // Concretely, if there are 4 non-final states and 2 input letters (0, 1), then
@@ -31,19 +27,8 @@ private:
     uint16_t directions;
 
 public:
-    void operator++() {
-        // TODO
-    }
-
-    TransFn operator*() {
-        // TODO
-    }
-
-    bool operator==(TransFnIterator other) {
-        // TODO
-    }
-
-    bool operator!=(TransFnIterator other) {
-        // TODO
-    }
+    void operator++();
+    TransFn operator*();
+    bool operator==(TransFnIterator other);
+    bool operator!=(TransFnIterator other);
 };
