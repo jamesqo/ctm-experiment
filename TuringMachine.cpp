@@ -1,5 +1,7 @@
 #include <TuringMachine.h>
 
+#include <TransFn.h>
+
 TuringMachine::TuringMachine(TransFn trans_fn) {
     // TODO
 }

@@ -22,11 +22,13 @@ int main() {
         add_to_db(trans_fn, output_str);
     }
 
+    /*
     // Calculate the algo probs / complexities using the stored info
     for (entry : db) {
         algo_prob = entry.count / db.count;
         algo_complexity = -log_2(algo_prob);
     }
+    */
 
     return 0;
 }
